@@ -2,111 +2,45 @@ import React from 'react';
 import 'web-adtrace';
 
 class AdTrace extends React.Component {
+  
   constructor(props) {
     super(props);
-    
-    this.state = {
-      log: "Click track session or event"
+    const config = {
+      app_token: props.app_token,
+      environment: props.environment,
+      unique_id: props.unique_id,
+      
     };
-    this.adtrace = new window.AdTrace({
-      app_token: '228fu1ygm2ta',
-      environment: 'production', // or 'sandbox' in case you are testing SDK locally with your web app
-      unique_id: '5056e23a-fh94-283o-b8a2-4ac4e20d48b2', // each web app user needs to have unique identifier,
-    });
-    this.loading = {};
+    if (props.default_tracker !== undefined) {
+      config['default_tracker'] = props.default_tracker;
+    }
+    this.adtrace = new window.AdTrace(config);
   }
 
-  trackSession = () => {
-    if (this.loading.session) {
-      return;
-    }
-
-    this.loading.session = true;
-
+  trackSession = (onSuccess, onError) => {
     this.adtrace.trackSession((result) => {
-      this.successCb(result, 'session');
+      onSuccess(result);
     }, (errorMsg, error) => {
-      this.errorCb(errorMsg, error, 'session');   
+      onError(errorMsg, error);
     });
   }
 
-  trackEvent = () => {
-    if (this.loading.event) {
-      return;
-    }
-
-    this.loading.event = true;
-
-    const eventConfig = {
-      event_token: '9zcrfo', // event token
-      // other optional parameters //
-      revenue: 10,
-      currency: 'EUR',
-      event_value: 'my-value',
-      callback_params: [{
-        key: 'some-key-1',
-        value: 'some-value-1'
-      }, {
-        key: 'some-key-2',
-        value: 'some-value-2'
-      }],
-      partner_params: [{
-        key: 'some-partner-key-1',
-        value: 'some-partner-value-1'
-      }, {
-        key: 'some-partner-key-2',
-        value: 'some-partner-value-2'
-      }, {
-        key: 'some-partner-key-1',
-        value: 'some-partner-value-3'
-      }]
-    };
-
-    this.adtrace.trackEvent(eventConfig, (result) => {
-      this.successCb(result, 'event');
-
+  trackEvent = (config, onSuccess, onError) => {
+    this.adtrace.trackEvent(config, (result) => {
+      onSuccess(result);
     }, (errorMsg, error) => {
-      this.errorCb(errorMsg, error, 'event');
+      onError(errorMsg, error);
     });
   }
 
-  successCb = (result, what) => {
-    this.loading[what] = false;
-
-    this.setState({
-      log: 'SUCCESS :)\n\n' + result.responseText
-    });
+  getAdId = () => {
+    return this.adtrace.getAdId();
   }
 
-  errorCb = (errorMsg, error, what) => {
-    this.loading[what] = false;
-
-    this.setState({
-      log: 'ERROR :(\n\n' + errorMsg + '\n\n' + error.responseText
-    });
+  stableLocalData = () => {
+    this.adtrace.stableLocalData();
   }
-    
-    
-  
 
-    render() {
-      localStorage.setItem('name', 'Saba')
-      console.log('the window??', window.location)
-        return (
-          <div className="App">
-            <header className="App-header">
-              <button onClick={this.trackSession}>
-                Track session
-              </button>
-              <br/>
-              <button onClick={this.trackEvent}>
-                Track event
-              </button>
-              <pre>{this.state.log}</pre>
-            </header>
-          </div>
-        );
-    }
 }
 
 export default AdTrace;
