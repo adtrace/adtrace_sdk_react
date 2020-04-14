@@ -258,12 +258,10 @@ adtrace.stableLocalData();
 3. Create and initialize adtrace instance :
 	```js
 	this.adtrace = new AdTrace({
-	  app_token: '9e8tyd0l38s7',
-	  environment: 'sandbox', // or 'sandbox' in case you are testing SDK locally with your web app
-	  unique_id: '5057e23a-fh94-878o-b8a2-4ac4e20d48b2', // each web app user needs to have unique identifier,
-	});
-	this.setState({
-	  adtraceId: this.adtrace.getAdId()
+	  app_token: 'YourAppToken',
+	  environment: 'production', // or 'sandbox' in case you are testing SDK locally with your web app
+	  unique_id: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx' // each web app user needs to have unique identifier,
+	  default_tracker: 'Your non organic tracker' // optional
 	});
 	```
 4. Your code should look like this:
