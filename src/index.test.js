@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { AdTrace } from '.'
 
-describe('ExampleComponent', () => {
+describe('AdTrace', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(AdTrace).toBeTruthy()
   })
 })
