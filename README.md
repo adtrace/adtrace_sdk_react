@@ -247,7 +247,7 @@ adtrace.stableLocalData();
 ## <a id="libs"></a>Use with React libraries
 ### <a id="libs-next"></a>Next Js
 
-1. Install this package like [this](#install-library).
+1. Install this package like [this](#install-sdk).
 
 
 2. Import `react-adtrace` in `componentDidMount` method:
