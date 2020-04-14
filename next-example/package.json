@@ -1,7 +1,8 @@
 {
   "name": "next-example",
-  "version": "0.0.1",
-  "description": "",
+  "homepage": "https://github.com/adtrace/adtrace_sdk_react",
+  "version": "1.2.3",
+  "description": "This is the NextJS example of AdTrace",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -9,12 +10,12 @@
     "start": "next start"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "arefhosseini",
+  "license": "MIT",
   "dependencies": {
     "next": "^9.3.4",
     "react": "^16.13.1",
-    "react-adtrace": "0.0.1",
+    "react-adtrace": "^1.2.3",
     "react-dom": "^16.13.1"
   }
 }
