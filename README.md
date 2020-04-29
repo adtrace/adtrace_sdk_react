@@ -1,4 +1,10 @@
-[![NPM](https://img.shields.io/npm/v/react-adtrace.svg)](https://www.npmjs.com/package/react-adtrace) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+<p align="center"><a href="https://adtrace.io" target="_blank" rel="noopener noreferrer"><img width="100" src="http://adtrace.io/fa/wp-content/uploads/2019/02/logo.png" alt="Adtrace logo"></a></p>
+
+<p align="center">
+  <a href='https://www.npmjs.com/package/react-adtrace'><img src='https://img.shields.io/npm/v/react-adtrace.svg'></a>
+  <a href='https://opensource.org/licenses/MIT'><img src='https://img.shields.io/badge/License-MIT-green.svg'></a>
+  <a href='https://standardjs.com'><img src='https://img.shields.io/badge/code_style-standard-brightgreen.svg'></a>
+</p>
 
 ## Summary
 
