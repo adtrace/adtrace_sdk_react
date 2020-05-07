@@ -55,9 +55,6 @@ By using the SDK to your `React`, you can check [React example][react-example] f
 #### <a id="next-example"></a>Next example
 By using the SDK to your `Next JS`, you can check [Next Js example][next-example] for better help.
 
-
-There are example website inside the [`example` directory][example]. In there you can check how the AdTrace SDK can be integrated.
-
 ### <a id="qs-getting-started"></a>Getting started
 
 These are the minimal steps required to integrate the AdTrace SDK into your web app.
