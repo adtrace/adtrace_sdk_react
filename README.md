@@ -1,3 +1,4 @@
+English | [فارسی][per-readme]
 
 <p align="center"><a href="https://adtrace.io" target="_blank" rel="noopener noreferrer"><img width="100" src="http://adtrace.io/fa/wp-content/uploads/2019/02/logo.png" alt="Adtrace logo"></a></p>
 
@@ -348,3 +349,4 @@ adtrace.stableLocalData();
 [panel]:      https://panel.adtrace.io
 [react-example]:    example/
 [next-example]:  next-example/
+[per-readme]:  ./doc/persian/README-PER.md
