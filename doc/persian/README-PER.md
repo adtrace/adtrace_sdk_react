@@ -28,7 +28,7 @@ SDK ریکت ادتریس. شما برای اطلاعات بیشتر میتوا�
     <ul>
       <li><a href="#qs-sdk-add">افزودن SDK به پروژه</a></li>
     </ul>
-  <li><a href="#qs-integ-sdk">پیاده سازی SDK داخل وبسایت</a></li>
+  <li><a href="#qs-integ-sdk">پیاده سازی SDK داخل برنامه</a></li>
   <ul>
      <li><a href="#qs-create-unique-id">ساخت شناسه یکتا</a></li>
     <li><a href="#qs-basic-setup">راه اندازی اولیه</a></li>
@@ -138,7 +138,7 @@ yarn install react-adtrace
 </tr>
 </table>
 
-### <div id="qs-integ-sdk" dir="rtl" align='right'>پیاده سازی SDK داخل وبسایت</div>
+### <div id="qs-integ-sdk" dir="rtl" align='right'>پیاده سازی SDK داخل برنامه</div>
 
 <div dir="rtl" align='right'>
 ابتدا به معرفی و توضیح مختصری درباره <code>unique_id</code> پرداخته و سپس پیاده سازی را آغاز میکنیم.
