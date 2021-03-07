@@ -26,7 +26,7 @@ SDK ریکت ادتریس. شما برای اطلاعات بیشتر میتوا�
   <li><a href="#qs-example-apps">برنامه های نمونه</a></li>
   <li><a href="#qs-getting-started">شروع پیاده سازی</a></li>
     <ul>
-      <li><a href="#qs-sdk-add">افزودن SDK به پروژه</a></li>
+      <li><a href="#qs-add-sdk">افزودن SDK به پروژه</a></li>
     </ul>
   <li><a href="#qs-integ-sdk">پیاده سازی SDK داخل برنامه</a></li>
   <ul>
@@ -71,11 +71,11 @@ SDK ریکت ادتریس. شما برای اطلاعات بیشتر میتوا�
 </ul>
 </div>
 
-### <div dir="rtl" align='right'>استفاده در کتابخانه های ریکت</div>
+### <div dir="rtl" align='right'>استفاده در فریم ورک های دیگر</div>
 
 <div dir="rtl" align='right'>
 <ul>
-  <li><a href="#react-libs-next">کتابخانه Next Js</a></li>
+  <li><a href="#framework-next">کتابخانه Next Js</a></li>
 </ul>
 </div>
 
@@ -101,7 +101,7 @@ SDK ریکت ادتریس. شما برای اطلاعات بیشتر میتوا�
 برای پیاده سازی SDK ادتریس قدم به قدم مراحل زیر را دنبال کنید.
 </div>
 
-### <div id="qs-sdk-add" dir="rtl" align='right'>افزودن SDK به پروژه</div>
+### <div id="qs-add-sdk" dir="rtl" align='right'>افزودن SDK به پروژه</div>
 
 <div dir="rtl" align='right'>
 از طریق <code>npm</code> و یا <code>yarn</code> میتوانید SDK ادتریس را به <code>dependencies</code> خود اضافه نمایید:
@@ -436,9 +436,9 @@ localStorage.clear(); // clearing your own data
 adtrace.stableLocalData();
 ```
 
-## <div dir="rtl" align='right'>استفاده در کتابخانه های ریکت</div>
+## <div dir="rtl" align='right'>استفاده در فریم ورک های دیگر</div>
 
-### <div id="react-libs-next" dir="rtl" align='right'>کتابخانه Next Js</div>
+### <div id="framework-next" dir="rtl" align='right'>فریم ورک Next Js</div>
 
 <div dir="rtl" align='right'>
 <ul>
