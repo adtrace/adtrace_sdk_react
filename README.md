@@ -42,9 +42,9 @@ This is the guide to the React SDK of AdTrace™ for web apps. You can read more
    * [Default tracker](#af-default-tracker)
    * [Stable local data](#af-stable-local-data)
 
-### Use with React libraries
+### Use with other frameworks
 
-   * [Next Js](#react-libs-next)
+   * [Next Js](#framework-next)
 
 ## Quick start
 
@@ -308,9 +308,9 @@ Because the unique device identifer & adtrace identifer saved in `localStorage`.
 localStorage.clear(); // clearing your own data
 adtrace.stableLocalData();
 ```
-## Use with React libraries
+## Use with other frameworks
 
-### <a id="react-libs-next"></a>Next Js
+### <a id="framework-next"></a>Next Js
 
 - Add the SDK like [this](#qs-add-sdk).
 
