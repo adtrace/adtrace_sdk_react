@@ -1,6 +1,6 @@
 {
   "name": "react-adtrace",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "This is the React SDK of Adtrace",
   "author": "arefhosseini",
   "license": "MIT",
@@ -51,6 +51,6 @@
     "dist"
   ],
   "dependencies": {
-    "web-adtrace": "^1.2.3"
+    "web-adtrace": "^1.2.4"
   }
 }

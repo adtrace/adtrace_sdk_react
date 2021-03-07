@@ -1,7 +1,7 @@
 {
   "name": "react-adtrace-example",
   "homepage": "https://github.com/adtrace/adtrace_sdk_react",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "private": true,
   "dependencies": {
     "react": "file:../node_modules/react",

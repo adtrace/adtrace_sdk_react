@@ -1,7 +1,7 @@
 {
   "name": "next-example",
   "homepage": "https://github.com/adtrace/adtrace_sdk_react",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "This is the NextJS example of AdTrace",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "dependencies": {
     "next": "^9.3.4",
     "react": "^16.13.1",
-    "react-adtrace": "^1.2.3",
+    "react-adtrace": "^1.2.4",
     "react-dom": "^16.13.1"
   }
 }
