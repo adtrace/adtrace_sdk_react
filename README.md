@@ -102,7 +102,7 @@ Then start basic integration.
 
 ### <a id="qs-create-unique-id"></a>Create unique ID
 
-The `unique_id` is An **unuique device identifier** such as `gps_adid` in Android, `idfa` in iOS or `win_adid` in Windows. If your app isn't able to access or pass those identifiers, you should pass a similary built **UUID**.
+The `unique_id` is An **unuique device identifier** such as `gps_adid` in Android, `idfa` in iOS or `win_adid` in Windows. If your app isn't able to access or pass those identifiers, you should pass a similarly built **UUID**.
 
 For more information about creating UUID you can check [this solution](https://stackoverflow.com/a/2117523/4696843).
 
@@ -148,13 +148,13 @@ adtrace.trackSession((result) => {
 );
 ```
 
-**Note**: First tracking session take a little bit more time, because AdTrace should attribute and installing user's data first of all;
+**Note**: First tracking session takes a little bit more time, because AdTrace should attribute and installing user's data first of all;
 
 ## Event tracking
 
 ### <a id="et-event"></a>Track event
 
-You can use adtrace to track events. Lets say you want to track every tap on a particular button. You would create a new event token in your [panel], which has an associated event token - looking something like `abc123`. In order to track this event from your web app, you should do following:
+You can use adtrace to track events. Let's say you want to track every tap on a particular button. You would create a new event token in your [panel], which has an associated event token - looking something like `abc123`. In order to track this event from your web app, you should do following:
 
 ```js
 const eventConfig = {
@@ -170,7 +170,7 @@ adtrace.trackEvent(eventConfig, (result) => {
 
 ### <a id="et-revenue"></a>Track revenue
 
-You can attach revenue to event being tracked with AdTrace JS SDK in case you would like to track some purchase that happened inside your web app. In order to that, you need to attach `revenue` and `currency` parameters when tracking event:
+You can attach revenue to event being tracked with AdTrace JS SDK in case you would like to track some purchase that happened inside your web app. In order to do that, you need to attach `revenue` and `currency` parameters when tracking event:
 
 ```js
 const eventConfig = {
@@ -297,7 +297,7 @@ const adtrace = new AdTrace({
 });
 ```
 
-If it doesn't used, your data will attribiute in **organic tracker**.
+If it doesn't used, your data will attribute in **organic tracker**.
 
 
 ### <a id="af-stable-local-data"></a>Stable local data
