@@ -88,7 +88,7 @@ npm install react-adtrace
 <td>
 
 ```
-yarn install react-adtrace
+yarn add react-adtrace
 ```
 
 </td>
